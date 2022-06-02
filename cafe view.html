@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee store</title>
+    <link href="{% static 'css/business-casual.css' %}" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- {% block content %}
+    {% for cafe in cafes %}
+    {% endfor %}
+    {% endblock %} -->
+
+    
+    <div class="card w-30">
+    <div class="card-body">
+        <h5 class="card-title">Cafe Store</h5>
+        <a href="http://127.0.0.1:8000/" class="btn btn-primary">Go Back</a>
+        <a href="cafe create.html" class="btn btn-warning">Create</a>
+        <a href="/cafe/update/" class="btn btn-success">Update</a>
+        <a href="/cafe/delete/" class="btn btn-danger">Delete</a>
+    </div>
+    </div>
+
+    <!-- <h2>Coffees</h2>
+        <ul>
+            {% for coffee in coffees %}
+            {% endfor %}
+        </ul>
+        {% for coffee in coffees %}
+        {{coffee.last_name}} {{coffee.first_name}} <a href="../update/{{item.id}}">Update</a> <a href="../delete/{{item.id}}"> Delete</a> <br>
+        {% endfor %}
+        <a href="../create/">Create Coffee</a> -->
+
+</body>
+</html>

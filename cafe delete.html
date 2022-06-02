@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee deleting</title>
+    <link href="{% static 'css/business-casual.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <h2>Coffees Delete</h2>
+        <form action="" method="post">{% csrf_token %}
+            Are you sure to delete this student? <br>
+            <button type="submit">Confirm</button>
+        </form>
+    
+</body>
+</html>
